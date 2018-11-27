@@ -16,7 +16,7 @@ public class TabbableInput : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if( Input.GetKeyDown(KeyCode.Tab)){	
-		
+			//likely want torefactor at some point.
 			if(Inputs[position].GetComponent<TMP_InputField>() != null){
 				var input = Inputs[position].GetComponent<TMP_InputField>();
 				input.Select();
@@ -31,7 +31,11 @@ public class TabbableInput : MonoBehaviour {
 			}else if(Inputs[position].GetComponent<TMP_Dropdown>() != null){
 				var input = Inputs[position].GetComponent<TMP_Dropdown>();
 				input.Select();
-				input.ActivateInputField();
+				input.Show();
+			}else if(Inputs[position].GetComponent<Dropdown>() != null){
+				var input = Inputs[position].GetComponent<Dropdown>();
+				input.Select();
+				input.Show();
 			}
 			
 			position ++;
