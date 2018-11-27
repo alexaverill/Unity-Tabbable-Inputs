@@ -8,7 +8,7 @@ It would be highly reccommended to use Text Mesh Pro.
 
 ## Current Support
 Current the following types of elements are supported: 
-Unity Base Input 
-Unity Base Button
-Text Mesh Pro Input
-Text Mesh Pro Dropdown. 
+* Unity Base Input 
+* Unity Base Button
+* Text Mesh Pro Input
+* Text Mesh Pro Dropdown. 
